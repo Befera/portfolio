@@ -6,6 +6,9 @@ const jpegtran = require('imagemin-jpegtran');
 const sass = require('gulp-sass');
 const cssnano = require('gulp-cssnano');
 const babel = require('gulp-babel');
+const serve = require('gulp-serve');
+
+gulp.task('serve', serve('public'));
 
 gulp.task('scripts', () =>
   gulp.src(['src/js/*.js'])
